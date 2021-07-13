@@ -9,7 +9,7 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 <<<<<<< HEAD
-Here is a short description 3 of the plugin.  This should be no more than 150 characters.  No markup here.
+Here is a short description 43 of the plugin.  This should be no more than 150 characters.  No markup here.
 
 =======
 >>>>>>> 503345151093fbc97a27b9db015dcfe1d1c0e0a9
