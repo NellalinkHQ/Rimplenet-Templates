@@ -115,19 +115,6 @@ class Rimplenet_Templates {
 		 * The class responsible for defining all actions that occur in the admin area.
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-rimplenet-templates-admin.php';
-		 
-		/**
-		 * The class responsible defining settings metaboxes on the templates setting page.
-		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-templates-metabox-settings.php';
-		
-		/**
-		 * The class responsible defining rules metaboxes on the templates setting page.
-		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-templates-metabox-rules.php';
-		
-		
-		
 		
 		/**
 		 * The class responsible for Registering Custom Post Type

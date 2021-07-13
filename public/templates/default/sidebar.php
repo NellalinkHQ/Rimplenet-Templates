@@ -18,12 +18,6 @@
     if(empty($dashboard_logo)){ $dashboard_logo = get_site_icon_url('', ''); }
     
     $dashboard_logo_dark = get_post_meta($template_id,"dashboard-logo-dark",true);
-    
-    
-    $dashboard_company_profile_pic = get_post_meta($template_id,"dashboard-company-profile-pic",true);
-    if(!empty($dashboard_company_profile_pic)){ 
-     $dashboard_company_profile_pic_style = "background: url($dashboard_company_profile_pic);";
-    }
 ?> 
     
     <nav id="sidebar" class="">
@@ -33,7 +27,7 @@
             </h1>
             <span><?php echo $dashboard_small_title; ?></span>
         </div>
-        <div class="profile-bg" style="<?php echo $dashboard_company_profile_pic_style; ?>" ></div>
+        <div class="profile-bg"></div>
          <ul class="list-unstyled components">
              
             <?php
@@ -53,7 +47,6 @@
                  //$menu_item_target = get_post_meta( $menu->ID, '_menu_item_target',true);
                  $post_id = $menu->object_id;
                 
-                 $menu_style = apply_filters('rimplenet_menu_style', $post_id, $menu);
                   if (get_post_meta( $menu->ID, '_rimplenet_menu_meta',true)) {
                     $icon_name = get_post_meta( $menu->ID, '_rimplenet_menu_meta',true);
                     $icon_disp = '<span class="material-icons">'.$icon_name.'</span>';
@@ -77,7 +70,6 @@
                 else{
                     $menu_item_link = get_permalink().'?rimplenet-view-post='.$post_id;
                   }
-                  //$menu_item_link =  apply_filters('rimplenet_menu_url', $post_id, $menu);
                  //echo var_dump($menu);
                   
                   
@@ -86,7 +78,7 @@
                     if($child_counter>1){ //if has children, open tag <li> and <a with class dropdown ot be closed in COUNTER REDUCTION FXN
                          ?>
                          
-                        <li class="<?php echo $active_menu_disp ?>" style="<?php echo $menu_style; ?>">
+                        <li class="<?php echo $active_menu_disp ?>">
                             <a href="#Dropdown<?php echo $menu->ID; ?>" data-toggle="collapse" aria-expanded="false"  target="<?php echo $menu->target; ?>">
                                            
                                <?php echo  $icon_disp; ?> <?php echo $menu->title; ?> 
@@ -97,7 +89,7 @@
                             }
                             else{
                              ?>
-                            <li class="<?php echo $active_menu_disp ?>" style="<?php echo $menu_style; ?>">
+                            <li class="<?php echo $active_menu_disp ?>">
                                 <a href="<?php echo $menu_item_link; ?>" target="<?php echo $menu->target; ?>">
                                     
                                    <?php echo  $icon_disp; ?> <?php echo $menu->title; ?> 
@@ -111,7 +103,7 @@
                   
                ?>
                    
-                   <li class="<?php echo $active_menu_disp ?>" style="<?php echo $menu_style; ?>">
+                   <li class="<?php echo $active_menu_disp ?>">
                         <a href="<?php echo $menu_item_link; ?>" target="<?php echo $menu->target; ?>">
                            
                            <?php echo  $icon_disp; ?> <?php echo $menu->title; ?>  
