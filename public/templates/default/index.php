@@ -20,7 +20,7 @@ global $current_user, $wp;
 
 
     <div class="se-pre-con"></div>
-    <div class="wrapper wrapper-template-<?php echo $template_id; ?>">
+    <div class="wrapper">
 
         <!-- Left Sidebar Start -->
         <?php include 'sidebar.php'; ?>
@@ -43,10 +43,6 @@ global $current_user, $wp;
                 }else{
                    $content = get_post_field('post_content', $template_id);
                 }
-                
-                
-                $content = apply_filters('the_content_rimplenet',$content, $content_id);
-                
                  echo apply_filters('the_content',$content );
                  
                ?>

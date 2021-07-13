@@ -85,7 +85,7 @@ class Rimplenet_Templates_Admin {
         }
 
     public function admin_menu_addon_display_fxn() { 
-          include_once plugin_dir_path( dirname( __FILE__ ) ) . '/admin/partials/manager-admin-tabs.php';
+          include_once plugin_dir_path( dirname( __FILE__ ) ) . '/admin/partials/tabs-manager.php';
        }
     
       public function templates_settings_and_import()
