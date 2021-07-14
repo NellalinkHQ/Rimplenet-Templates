@@ -15,7 +15,7 @@
  * @wordpress-plugin
  * Plugin Name:       Rimplenet Templates
  * Plugin URI:        https://templates.rimplenet.com/
- * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
+ * Description:       Rimplenet Templates is a dashboard maker for wordpress. Using this Plugin is simple, install it, RIMPLENET TEMPLATES will appear on your admin dashboard menu (with ability to add / create templates, dashboard ~ it supports both admin dashboard & user dashboard). You display the created templates/dashboard with shortcode 
  * Version:           1.0.0
  * Author:            Nellalink
  * Author URI:        https://nellalink.com/
