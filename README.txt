@@ -19,7 +19,7 @@ To know how to Use this Plugin: visit [https://rimplenet.com/docs](https://rimpl
 Rimplenet Templates is a dashboard maker for wordpress. Using this Plugin is simple, install it, RIMPLENET TEMPLATES will appear on your admin dashboard menu (with ability to add / create templates, dashboard ~ it supports both admin dashboard & user dashboard). 
 
 
-> Note that Rimplenet is fairly new to the public but it has proven to be effective, to use it to full satisfaction, you will need the [Docs - https://rimplenet.com/docs/](https://rimplenet.com/docs/).
+> You might need the [Docs - https://rimplenet.com/docs/](https://rimplenet.com/docs/).
 
 == Installation ==
 
@@ -42,7 +42,7 @@ Visit your Wp dashboard , click on Pages , All Pages , Select your proposed page
 
 = What shortcode do I use to display my created dashboard =
 
-Use shortcode [rimplenet-template id=5], Change the id "5" to your template ID created in RIMPLENET TEMPLATES PAGE
+Use shortcode [rimplenet-template id=ID], Change the ID  to your template ID created in RIMPLENET TEMPLATES PAGE. E.g if your ID is 5 , your valid shortcode will be [rimplenet-template id=5]
 
 = I have Setup Issues or other Questions not included here =
 
@@ -58,14 +58,14 @@ Contact us via Phonecall or Live Chat or Via our Support forum, we answer as soo
 == Changelog ==
 
 = 1.0.0 =
-* Launch of Rimplenet, Download, Use and Give us Feedback.
+* Launch of Rimplenet Templates, Download, Use and Give us Feedback.
 
 
 == Upgrade Notice ==
 
 = 1.0.0 =
 
-* Launch of Rimplenet, Download, Use and Give us Feedback.
+* Launch of Rimplenet Templates, Download, Use and Give us Feedback.
 
 == FEATURES OF RIMPLENET TEMPLATES ==
 
