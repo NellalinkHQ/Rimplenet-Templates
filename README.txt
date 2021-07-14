@@ -16,7 +16,7 @@ To know how to Use this Plugin: visit [https://rimplenet.com/docs](https://rimpl
 == Description ==
 
 
-Rimplenet templates is a property of Rimplenet, a Financial Technology (FinTech) Plugin for Wordpress with E-Wallet Functionality used to setup E-Banking, Loan - Requester App, MLM, Matrix, Investments and Packages under Rimplenet Theme. Using this Plugin is simple, install it, RIMPLENET TEMPLATES will appear on your admin dashboard menu (with ability to add / create templates).
+Rimplenet Templates is a dashboard maker for wordpress. Using this Plugin is simple, install it, RIMPLENET TEMPLATES will appear on your admin dashboard menu (with ability to add / create templates, dashboard ~ it supports both admin dashboard & user dashboard). 
 
 
 > Note that Rimplenet is fairly new to the public but it has proven to be effective, to use it to full satisfaction, you will need the [Docs - https://rimplenet.com/docs/](https://rimplenet.com/docs/).
@@ -35,7 +35,7 @@ Rimplenet templates is a property of Rimplenet, a Financial Technology (FinTech)
 
 = How do I Create a New Dashboard? =
 
-Click Rimplenet Templates on your wordpress admin backend, then click the menu you want to create either matrix, packages or ewallets. then Copy paste the shortcode to the page you want it to work
+Click Rimplenet Templates on your wordpress admin backend, then click the templates and set the necessary settings
 
 = How do I change Dashboard title & other settings =
 Visit your Wp dashboard , click on Pages , All Pages , Select your proposed page , on the new page, rename / edit page title   
