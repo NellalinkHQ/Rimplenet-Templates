@@ -27,7 +27,7 @@
 
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {
-	die;
+    die;
 }
 
 /**
@@ -42,8 +42,8 @@ define( 'RIMPLENET_TEMPLATES_VERSION', '1.0.0' );
  * This action is documented in includes/class-rimplenet-templates-activator.php
  */
 function activate_rimplenet_templates() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-rimplenet-templates-activator.php';
-	Rimplenet_Templates_Activator::activate();
+    require_once plugin_dir_path( __FILE__ ) . 'includes/class-rimplenet-templates-activator.php';
+    Rimplenet_Templates_Activator::activate();
 }
 
 /**
@@ -51,8 +51,8 @@ function activate_rimplenet_templates() {
  * This action is documented in includes/class-rimplenet-templates-deactivator.php
  */
 function deactivate_rimplenet_templates() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-rimplenet-templates-deactivator.php';
-	Rimplenet_Templates_Deactivator::deactivate();
+    require_once plugin_dir_path( __FILE__ ) . 'includes/class-rimplenet-templates-deactivator.php';
+    Rimplenet_Templates_Deactivator::deactivate();
 }
 
 register_activation_hook( __FILE__, 'activate_rimplenet_templates' );
@@ -75,8 +75,8 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-rimplenet-templates.php';
  */
 function run_rimplenet_templates() {
 
-	$plugin = new Rimplenet_Templates();
-	$plugin->run();
+    $plugin = new Rimplenet_Templates();
+    $plugin->run();
 
 }
 run_rimplenet_templates();
