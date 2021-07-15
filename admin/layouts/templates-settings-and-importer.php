@@ -1,5 +1,6 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+	
 	if($_FILES["templates"]["name"]) {
 		$filename = $_FILES["templates"]["name"];
 		$source = $_FILES["templates"]["tmp_name"];
