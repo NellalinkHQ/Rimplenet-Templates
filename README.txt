@@ -1,4 +1,3 @@
-
 === Rimplenet Templates ===
 Contributors: nellalink
 Donate link: https://rimplenet.com/donate
@@ -43,7 +42,7 @@ Visit your Wp dashboard , click on Pages , All Pages , Select your proposed page
 
 = What shortcode do I use to display my created dashboard =
 
-Use shortcode [rimplenet-template id=ID], Change the ID  to your template ID created in RIMPLENET TEMPLATES PAGE. E.g if your ID is 5 , your valid shortcode will be [rimplenet-template id=5]
+Use shortcode [rimplenet-template id=ID], Change the ID  to your template ID created in RIMPLENET TEMPLATES PAGE. E.g if your ID is 5 , your valid shortcode will be [rimplenet-template id=5]
 
 = I have Setup Issues or other Questions not included here =
 
@@ -73,4 +72,5 @@ Contact us via Phonecall or Live Chat or Via our Support forum, we answer as soo
 1. Create Stylish User Dashboard
 2. Create Admin Dashbaord 
 3. Customize dashboard settings, title, footer text etc
-4. Easy User Menu Setup for any created dashboa
+4. Easy User Menu Setup for any created dashboard
+5. It's free and open source
