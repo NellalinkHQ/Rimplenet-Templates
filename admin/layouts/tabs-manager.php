@@ -16,18 +16,18 @@
             if($_GET["tab"] == "recommendations")
              {
                $recommendations_tab_active = "nav-tab-active";
-               $path_to_tab = plugin_dir_path( dirname( __FILE__ ) ) . "partials/recommendations.php";
+               $path_to_tab = plugin_dir_path( dirname( __FILE__ ) ) . "layouts/recommendations.php";
              }
             elseif($_GET["tab"] == "templates-settings-and-importer")
              {
                $templates_importer_tab_active = "nav-tab-active";
-               $path_to_tab = plugin_dir_path( dirname( __FILE__ ) ) . "partials/templates-settings-and-importer.php";
+               $path_to_tab = plugin_dir_path( dirname( __FILE__ ) ) . "layouts/templates-settings-and-importer.php";
              }
             else
              { 
                $active_tab  = "overview";
                $overview_tab_active = "nav-tab-active";
-               $path_to_tab = plugin_dir_path( dirname( __FILE__ ) ) . "partials/overview.php";
+               $path_to_tab = plugin_dir_path( dirname( __FILE__ ) ) . "layouts/overview.php";
              }
              
              //Set the url for each of the tab

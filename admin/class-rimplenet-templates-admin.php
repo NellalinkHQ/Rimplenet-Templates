@@ -51,11 +51,12 @@ class Rimplenet_Templates_Admin {
 
 		$this->plugin_name = $plugin_name;
 		$this->version = $version;
+		$this->load_dependencies();
 		
         add_action( 'admin_menu', array( $this, 'admin_menu_addon_display' ) );
         
         add_action( 'admin_menu', array( $this, 'templates_settings_and_import' ));
-         add_action( 'admin_menu', array( $this, 'admin_menu_docs_setup_link' ) );
+        add_action( 'admin_menu', array( $this, 'admin_menu_docs_setup_link' ) );
         add_action( 'admin_menu', array( $this, 'admin_menu_donate_link' ) );
         
         add_filter("plugin_action_links_rimplenet-templates/rimplenet-templates.php", array( $this, 'my_plugin_settings_link') );
@@ -65,6 +66,7 @@ class Rimplenet_Templates_Admin {
 		add_action( 'wp_nav_menu_item_custom_fields', array($this,'nav_menu_custom_fields'), 10, 2 );
 		add_filter( 'wp_setup_nav_menu_item',array($this,'nav_menu_setup_custom_fields' ));
 		add_action( 'wp_update_nav_menu_item', array($this,'nav_menu_update'), 10, 2 );
+		
 
 	}
 	
@@ -85,7 +87,7 @@ class Rimplenet_Templates_Admin {
         }
 
     public function admin_menu_addon_display_fxn() { 
-          include_once plugin_dir_path( dirname( __FILE__ ) ) . '/admin/partials/manager-admin-tabs.php';
+          include_once plugin_dir_path( dirname( __FILE__ ) ) . '/admin/layouts/tabs-manager.php';
        }
     
       public function templates_settings_and_import()
@@ -206,7 +208,11 @@ class Rimplenet_Templates_Admin {
     	}
     }
     
-    
+    private function load_dependencies(){
+        
+		//Include file to displays Template Settings Metabox 
+		include_once plugin_dir_path( dirname( __FILE__ ) ) . '/admin/class-template-settings.php';
+    }
          
 
 
