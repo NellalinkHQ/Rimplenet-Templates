@@ -3,7 +3,7 @@
         $wallet_decimal = get_post_meta($wallet_post_id, 'rimplenet_wallet_decimal', true);
         $wallet_symbol = get_post_meta($wallet_post_id, 'rimplenet_wallet_symbol', true);
         $wallet_id = get_post_meta($wallet_post_id, 'rimplenet_wallet_id', true);
-        $user_balance_shortcode  = '[rimplenet-wallet action="view_balance" wallet_id="'.$wallet_id.'"]';
+        $user_balance_shortcode  = '[rimplenet-template id="'.$wallet_id.'"]';
         
         $min_withdrawal_amount = get_post_meta($wallet_post_id, 'rimplenet_min_withdrawal_amount', true);
         $max_withdrawal_amount= get_post_meta($wallet_post_id, 'rimplenet_max_withdrawal_amount', true);
@@ -27,8 +27,11 @@
                      Wallet Unique ID 
                      <span class="dashicons dashicons-editor-help rimplenet-admin-tooltip" title="Wallet ID should be unique for each of your created wallet, wallet id should be lowercase alphabets and underscore (blank space is not allowed) e.g btc for United State Dollars, ngn for Nigerian Naira , btc for Bitcoin, you can as well use savings_wallet"></span>
                 </label></th>
-                <td><input name="rimplenet_wallet_id" id="rimplenet_wallet_id" type="text" value="<?php echo $wallet_id; ?>" placeholder="usd or ngn or bitcoin or savings_wallet" class="regular-text" required style="width:100%;max-width: 400px; height: 40px;"> </td>
+                <td><input name="rimplenet_wallet_id" id="rimplenet_wallet_id" type="text" value="<?php echo $wallet_id; ?>" placeholder="usd or ngn or bitcoin or savings_wallet" class="regular-text" required style="width:100%;max-width: 400px; height: 40px;"> 
+                </td>
             </tr>
+            
+            <!--
             <tr>
                 <th><label for="rimplenet_wallet_symbol"> 
                      Wallet Symbol 
@@ -171,6 +174,8 @@
                   <textarea id="rimplenet_wallet_note" name="rimplenet_wallet_note" rows="4" placeholder="Leave note here maybe about what you will use wallet for" style="width:100%;max-width:400px;"><?php echo $wallet_note; ?></textarea>
               </td>
             </tr>
+            
+            -->
             
             </tbody>
         </table>
